@@ -1,0 +1,96 @@
+*{
+    font-family: 'Sour Gummy', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eeeff1;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #e6cd81;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+}
+
+.right a {
+    color: #000;
+    text-decoration: none;
+}
+
+.left {
+    float: left;  
+    margin-left: 10px;  
+}
+
+.clearfix {
+    clear: both;
+}
+
+.left a {
+    color: #000;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.img:hover img {
+    transform: scale(1.1);
+}
+
+.bio {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px;
+    word-spacing: 20px;
+}
+
+.footer {
+    background-color: #e6cd81;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
