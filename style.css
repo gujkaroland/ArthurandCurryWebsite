@@ -85,6 +85,11 @@ header {
     word-spacing: 20px;
 }
 
+.social-links i {
+    font-size: 24px;
+    color: #ff5733;
+}
+
 .footer {
     background-color: #e6cd81;
     color: white;
