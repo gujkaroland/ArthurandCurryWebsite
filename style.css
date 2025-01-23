@@ -6,11 +6,11 @@
 }
 
 html {
-    background-color: #eeeff1;
+    scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
 
-header {
+nav {
     background-color: #e6cd81;
     color: white;
     padding: 40px 0;
@@ -19,7 +19,13 @@ header {
     word-spacing: 10px;
 }
 
-.right {
+#open-section {
+    margin-bottom: 115px;
+    background-color: #eeeff1;
+    min-height: 100vh;
+}
+
+nav .right {
     position: absolute;
     right: 15px;
     top: 27px;
@@ -93,12 +99,48 @@ header {
     color: #e8b466;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
 .footer {
     background-color: #e6cd81;
     color: white;
     text-align: center;
+    margin-top: 40px;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    height: 60px;
+}
+
+.gallery {
+    padding: 0 6px;
+    float: left;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    margin-top: 8px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    object-fit: cover;
 }
