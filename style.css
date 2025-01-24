@@ -11,12 +11,14 @@ html {
 }
 
 nav {
-    background-color: #e6cd81;
-    color: white;
+    background-color: #ebbe6f;
     padding: 40px 0;
-    text-align: center;
     font-weight: bold;
     word-spacing: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
 }
 
 #open-section {
@@ -63,27 +65,28 @@ nav {
     font-weight: bold;
 }
 
-.img {
+.profilepicture, .profilepicture img {
     border-radius: 50%;
     display: block;
     margin: auto;
-    margin-top: 40px;
     width: 50%;
-    max-width: 400px;
     height: auto;
     overflow: hidden;
 }
 
-.img img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.5s;
+.profilepicture {
+    margin-top: 40px;
+    max-width: 400px;
 }
 
-.img:hover img {
+.profilepicture:hover img {
     transform: scale(1.1);
+}
+
+.profilepicture img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
 }
 
 .bio {
@@ -100,25 +103,18 @@ nav {
 
 .social-links i {
     font-size: 24px;
-    color: #e8b466;
+    color: #eeac49;
 }
 
 body {
     height: 100%;
     margin: 0;
-}
-
-body {
     display: flex;
     flex-direction: column;
 }
 
-.content {
-    flex: 1;
-}
-
 .footer {
-    background-color: #e6cd81;
+    background-color: #ebbe6f;
     color: white;
     text-align: center;
     margin-top: 40px;
@@ -130,10 +126,6 @@ body {
 .gallery {
     padding: 0 6px;
     float: left;
-    
-}
-
-.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -147,4 +139,8 @@ body {
     border-radius: 10px;
     transition: transform 0.5s;
     object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(0.9);
 }
